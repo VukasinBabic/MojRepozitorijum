@@ -1,0 +1,44 @@
+{# empty Twig template #}
+{% extends "base.html.twig" %}
+
+{% block body %}
+    
+    <section class="include-table">
+        
+    <h1>{{ text|upper }}</h1>
+    
+    <div class="table-responsive">
+        <table class="table  table-bordered table-hover text-center">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Naziv</th>
+                    <th>Kategorija</th>
+                    <th>Cena</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for artikal in artikli %}
+                    <tr>
+                        <td>{{ artikal.id }}</td>
+                        <td>{{ artikal.name }}</td>
+                        {% if artikal.category != null %}
+                        <td>{{ artikal.category.name }}</td>
+                        {% else %}
+                        <td></td>
+                        {% endif %}
+                        <td>{{ artikal.price }}</td>
+                        <td><a href="{{ path('article_show', { 'id' : artikal.id, 'name' : artikal.name }) }}">Show</a></td>
+                        {% if is_granted('ROLE_ADMIN') %}
+                        <td><a href="{{ path('article_update', { 'id' : artikal.id }) }}">Edit</a></td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+        
+    </section>
+            
+{% endblock %}

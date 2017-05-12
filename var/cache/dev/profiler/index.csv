@@ -1,0 +1,12 @@
+bae8d8,127.0.0.1,GET,http://symfony1/app_dev.php/,1494430850,,200
+a74fb0,127.0.0.1,GET,http://symfony1/app_dev.php/,1494430860,,200
+0b2626,127.0.0.1,GET,http://symfony1/app_dev.php/create,1494430866,7db1a8,200
+7db1a8,127.0.0.1,GET,http://symfony1/app_dev.php/create,1494430866,,404
+01f658,127.0.0.1,GET,http://symfony1/app_dev.php/articles,1494430871,95aae5,200
+95aae5,127.0.0.1,GET,http://symfony1/app_dev.php/articles,1494430871,,500
+7ff2f5,127.0.0.1,GET,http://symfony1/app_dev.php/article,1494430874,694a43,200
+694a43,127.0.0.1,GET,http://symfony1/app_dev.php/article,1494430874,,404
+521d93,127.0.0.1,GET,http://symfony1/app_dev.php/article/create,1494430880,,302
+a96bf8,127.0.0.1,GET,http://symfony1/app_dev.php/login,1494430880,,200
+ddfa93,127.0.0.1,GET,http://symfony1/app_dev.php/favicon.ico,1494430881,83ae29,200
+83ae29,127.0.0.1,GET,http://symfony1/app_dev.php/favicon.ico,1494430881,,404

@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /Users/backend2/Desktop/workspace/symfony1/app/config/routing_dev.yml
